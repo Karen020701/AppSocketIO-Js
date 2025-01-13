@@ -22,3 +22,5 @@ npm start
 ```
 
 The server will start at: http://localhost:3000 and you will see a message on the screen "Hello World with Socket.IO!"
+
+![image](https://github.com/user-attachments/assets/98b4f1d3-75bd-4b39-ac88-32c9af8033d9)
