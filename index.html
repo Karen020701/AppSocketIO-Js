@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socket.IO Hola Mundo</title>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <h1 id="message"></h1>
+
+  <script>
+    // Conectar al servidor de Socket.IO
+    const socket = io();
+
+    // Escuchar el mensaje enviado por el servidor
+    socket.on('message', (data) => {
+      document.getElementById('message').textContent = data;
+    });
+  </script>
+</body>
+</html>
